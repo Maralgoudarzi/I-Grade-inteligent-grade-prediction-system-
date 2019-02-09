@@ -43,4 +43,4 @@ App (I-grade):
 
 # Step 1
 ### Data prepration
-This project is based on the following technology.
+for making our model and use it for the prediction we need to first prepare the data for process.
