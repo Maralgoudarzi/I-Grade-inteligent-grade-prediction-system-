@@ -25,20 +25,20 @@ App (I-grade):
     + css (folder)
       + bootstrap
     + datasets (folder)
-      + dataset_main.csv
+      + dataset_main.csv // main dataset for making model
     + images (folder)
-      + Logo.png
+      + Logo.png 
       + ki.jpg
     + javascript (folder)
-      + viz.js
+      + viz.js // main javascript file for making charts
   + template (folder)
     + index.html
-    + prediction.html
-    + question_form.html
+    + prediction.html // page of showing the prediciton result
+    + question_form.html // the form for getting user input
   + Convertor.py
-  + Model_classification.py
-  + plot.py
-  + server.py
+  + Model_classification.py // clasifier model
+  + plot.py // preparing data to use for plotting
+  + server.py // application server backend part
   
 
 # Step 1
