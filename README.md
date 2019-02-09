@@ -21,9 +21,15 @@ This project is based on the following technology:
 we can seprate this project (Flask framework) to several main part with different functionality.
 
 *App (I-grade):
-  + python (folder)
   + static (folder)
+    + css (folder)
+    + datasets (folder)
+    + images (folder)
+    + javascript (folder)
   + template (folder)
+    + index.html
+    + prediction.html
+    + question_form.html
   + Convertor.py
   + Model_classification.py
   + plot.py
