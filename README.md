@@ -6,6 +6,13 @@ This project is based on the following technology:
 * Data
   + Pandas
   + Numpy
+  
+* Model
+  + Sikit-learn
+  
+* Web side
+  + Flsk
+  + Bootstrap
 
 # Step 1
 ### Data prepration
