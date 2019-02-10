@@ -1,4 +1,4 @@
-- [I-Grade (inteligent grade prediction system)](#heading)
+- [I-Grade (inteligent grade prediction system)](##heading)
 - [Requirments and prepration](#heading)
 
 <!-- TOC -->
