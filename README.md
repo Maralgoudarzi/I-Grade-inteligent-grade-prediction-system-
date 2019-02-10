@@ -1,7 +1,8 @@
-- [I-Grade (inteligent grade prediction system)](##I-Grade20%(inteligent20%grade20%prediction20%system))
+- [I-Grade (inteligent grade prediction system)](#headers)
 - [Requirments and prepration](#heading)
 
 <!-- TOC -->
+<a name="headers"/>
 ## I-Grade (inteligent grade prediction system)
 Grade prediction system based on trend of the recorded data in database. User select its habit then get the grade closest to the final result.
 
