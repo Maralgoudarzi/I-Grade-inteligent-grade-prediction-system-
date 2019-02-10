@@ -42,5 +42,14 @@ App (I-grade):
   
 
 # Step 1
-### Data prepration
-for making our model and use it for the prediction we need to first prepare the data for process.
+### Data prepration (Model_classification.py)
+for making our model and use it for the prediction we need to first prepare the data for process. we are dealing with data using "pandas", "numpy" , "sklearn"
+so we need to import this library:
+
+```
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import OneHotEncoder
+
+```
