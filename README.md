@@ -92,3 +92,56 @@ X_train, X_test, y_train, y_test = train_test_split(df[:,:16],enc_labels, strati
 # Step 2
 ### creating our model (Model_classification.py)
 we are using two clasifier in this project, and then used the most accurate one. we are using sci-kit learn python library.
+
+```ruby
+
+import pandas as pd
+def report(clf, X_train, y_train, X_test, y_test,M_name):
+    print("+++++report of the model+++++")
+    print(M_name)
+    clf.fit(X_train, y_train)
+    y_pred = clf.predict(X_test)
+    print('Precision score: {:3f}'.format(precision_score(y_test, y_pred, average='macro')))
+    print('Prediction Accuracy: {:3f}'.format(accuracy_score(y_test, y_pred)))
+    print('Recall score: {:3f}'.format(recall_score(y_test, y_pred, average='macro')))
+    print('F1 score: {:3f}'.format(f1_score(y_test, y_pred, average='macro')))
+
+
+#models
+lr = LogisticRegression()
+report(lr, X_train, y_train, X_test, y_test,"LogisticRegressio")
+
+```
+and then later we can use predict model to get the prediciton result based on new data. prediction function just change the numerical output to categorical one
+```ruby
+
+def predictFunction(data_predicit):
+    result =lr.predict(data_predicit)
+    if result[0] == 0:
+        return 'Average'
+    if result[0] == 1:
+        return 'Bad'
+    if result[0] == 2:
+        return 'Good'
+    if result[0] == 3:
+        return 'Very good'
+    #print("the predicted grade is {}".format(result[0]))
+    #return result[0]
+
+predictFunction(validation_data)
+
+```
+# Step 3
+### Web structure preparation (server.py)
+so for using our model on our web application we are using "Flask" python framework as our web back-end. so everything is happening in server.py file. getting new data from front-end file and send it to server and then calling prediction function and send it again to front-end to show it up.
+
+```ruby
+@app.route('/prediction')
+def prediction():
+    student = np.array(studentInfo)
+    studentTwoDArray = np.reshape(student, (-1, 16))
+    pred_result = predictFunction(studentTwoDArray)
+    
+    return render_template('prediction.html',student=student,pred_result=pred_result)
+
+```
