@@ -149,3 +149,32 @@ def prediction():
 # Step 4
 ### Visualization part- charts and plots(server.py and plot.py and viz.js)
 in visualisation part we just tried to provid two chart to make the data more understandable maybe will help user to get better view from predicted result. we used "chartjs" javascript library inorder to visualize the data.
+
+we difined two function for two chart models then later we plot them just by calling this function:
+1. agePlot: plot grade avrage distribution regarding age
+2. genderPlot: plot grade avrage distribution regarding gender
+
+```ruby
+function agePlot(data_one,data_two, data_three, data_four, data_five){
+
+var ctx = document.getElementById('ageChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ["15", "16","17","18","19","20"],
+        datasets: [{
+            label: "Avarage grade based on gender",
+            backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+            borderColor: 'rgb(255, 99, 132)',
+            data: [data_one,data_two, data_three, data_four, data_five,5],
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+}
+```
