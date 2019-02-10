@@ -1,3 +1,5 @@
+- [I-grade](#I-Grade (inteligent grade prediction system))
+
 # I-Grade (inteligent grade prediction system)
 Grade prediction system based on trend of the recorded data in database. User select its habit then get the grade closest to the final result.
 
@@ -178,3 +180,13 @@ var chart = new Chart(ctx, {
 });
 }
 ```
+
+# Run the code
+after we install below requirments on our system:
+  * sci-kit learn
+  * Flask
+  * Numpy
+  * Panda
+  
+you can simply run the server.py file and then server will run on you localhost. then just open prowser and type your local host IP and enjoy the application
+
