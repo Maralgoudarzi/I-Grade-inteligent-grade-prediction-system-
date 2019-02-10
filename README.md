@@ -1,6 +1,6 @@
-- [I-grade](#heading)
+- [Heading](#heading)
 
-# I-Grade (inteligent grade prediction system)
+## I-Grade (inteligent grade prediction system)
 Grade prediction system based on trend of the recorded data in database. User select its habit then get the grade closest to the final result.
 
 # Requirments and prepration
