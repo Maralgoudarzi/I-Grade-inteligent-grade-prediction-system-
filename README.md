@@ -145,3 +145,7 @@ def prediction():
     return render_template('prediction.html',student=student,pred_result=pred_result)
 
 ```
+
+# Step 4
+### Visualization part- charts and plots(server.py and plot.py and viz.js)
+in visualisation part we just tried to provid two chart to make the data more understandable maybe will help user to get better view from predicted result. we used "chartjs" javascript library inorder to visualize the data.
