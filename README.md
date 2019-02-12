@@ -6,6 +6,9 @@
 
 <a name="headers"/>
 
+youtube videow about project
+https://youtu.be/HueXoAcfAuM
+
 ![Logo](igrade/static/images/Logo.png)
 
 ## I-Grade (inteligent grade prediction system)
