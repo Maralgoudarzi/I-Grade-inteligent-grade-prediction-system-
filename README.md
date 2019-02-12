@@ -6,7 +6,7 @@
 
 <a name="headers"/>
 
-![Logo](igrade/static/images/logo.png)
+![Logo](igrade/static/images/Logo.png)
 
 ## I-Grade (inteligent grade prediction system)
 Grade prediction system based on trend of the recorded data in database. User select its habit then get the grade closest to the final result.
